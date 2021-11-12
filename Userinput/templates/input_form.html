@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+
+<div style="text-align:center">
+    <div style="background: dimgray"><h1 style="color: white">Input Ideas</h1></div>
+    <form action="{% url 'addInput' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input style="background: blueviolet"  type="submit"  value="Submit">
+    </form>
+</div>
+</html>
